@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <section>
+        <div class="div1">
+            <form >
+                <h1 style="font-family:Roboto;text-align:center;width:700px;margin-bottom:15px;"><i style="font-family:Impact, 
+Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(10, 10, 10);">HOTEL BOOKING REGISTRATION FORM</i></h1>
+                <h3 style="align-self: start;font-size:30px;text-align:left;width:700px; color:#DE3163;">CUSTOMER 
+INFORMATION</h3>
+               <label for="fname" > First Name:<p style="color:rgb(0, 217, 255);font-size:30px;"></p>
+               <input type="text" placeholder=" Enter Your First Name" id="fname" required>
+            </label>
+               <label for="lname" >Last Name:
+                <input type="text" placeholder=" Enter Your Last Name" id="lname" required>
+            </label>
+               <label for="cindate">Check-in Date:<p style="color:red;font-size:30px;"></p>
+               <input type="date" placeholder=" Enter Date" id="cindate" required>
+            </label>
+               <label for="tnod">Total Number Of Days:<p style="color:red;font-size:30px;"></p>
+               <input type="number" placeholder=" Enter Total Number Of Days" id="tnod" required>
+            </label>
+               <label for="tnop">Total Number Of Persons:<p style="color:red;font-size:30px;"></p>
+               <input type="number" placeholder=" Enter Total Number Of Persons" id="tnop" required>
+            </label>
+               <h3 style="font-family:Roboto;font-size:30px;text-align:left;width:800px;height:50px;color: #DE3163;">ROOM 
+INFORMATION</h3>
+               <label for="rtype">Room Type:</label>
+            <select id="rtype" style="background-color:white;height:30px;width:250px;font-size:25px;margin-bottom: 15px;">
+                <option value="0">Select</option>
+                <option value="2500">Delux Room(2500/-)</option>
+                <option value="4000">Suite Room(4000/-)</option>
+            </select><br>
+            <label for="amenities">Amenities:</label>
+            <select id="amenities" style="background-color:white;height:30px;width:230px;font-size:25px;margin-bottom: 15px;">
+                <option value="'0">Select</option>
+                <option value="1000">AC(1000/-)</option>
+                <option value="300">Locker(300/-)</option>
+                <option value="1300">Both(1300/-)</option>
+            </select>
+            <h4 style="font-family:Roboto;font-size:30px;text-align:left;width:700px;height:50px;color: darkred;">PLEASE PAY 
+ADVANCE AMOUNT</h4>
+            <label for="aamount">advance payment:<p style="color:rgb(224, 80, 209);font-size:30px;"></p>
+            <input type="number" placeholder=" Advance Amount" id="aamount" required >
+        </label>
+        <button style="background-color:#de31ca;width:400px;border-radius:5px;height:60px;font-size:30px;margin-left:200px; ;margin-top:10px;" onclick="main()" >Calculate</button>
+            <h3 style="font-family:Roboto;font-size:30px;text-align:left;width:800px;height:50px;margin-top:15px;color: 
+#de31b6">TOTAL COST</h3>
+            <label for="trcost">Total Room Cost:
+            <input type="number"placeholder=" Total Room Cost" id="trcost" readonly>
+        </label>
+            <label for="tacost">Total Amenities Cost:
+            <input type="number"placeholder=" Total Amenities Cost" id="tacost" readonly>
+        </label>
+            <label for="addcost">Additional Cost:
+                <h3  style="font-size:30px;font-family:Roboto;"><p style="color:#663399;font-size:39px;">*</p>IF PERSONS EXCEEDS 
+2,THEN PER DAY COST FOR EXTRA PERSON:1000/-<p style="color:rgb(255, 0, 217);font-size:39px;"></p></h3>
+            <input type="number"placeholder=" Additional Cost" id="addcost" readonly>
+        </label>
+            <label for="tcost">Total Cost:
+            <input type="number"placeholder=" Total Cost" id="tcost" readonly></label>
+            <h3 style="font-family:Roboto;font-size:30px;text-align:left;width:800px;height:50px;color: #DE3163;">BALANCE 
+AMOUNT</h3>
+            <label for="balance">Balance Amount:
+            <input type="number"placeholder=" Balance Amount" id="balance" readonly>
+
+            <input type="checkbox" style="margin-left:0px;display:inline-block;margin-bottom: 
+            0px;width:20px;">&nbsp&nbspDisable ?
+
+
+
+        </label>
+            <label style="font-size:30px;display:inline-block;">
+                <input type="checkbox" style="margin-left:0px;display:inline-block;margin-bottom: 
+0px;width:20px;">&nbsp&nbspCustomer should follow all rules and regulations
+            </label>
+            <input type="submit" value="Register" style="background-color: rgb(7, 10, 116);width:250px;border-radius:5px;height:62px;font-size:30px;margin-left:275px;margin-top:20px;">
+            </form>
+            <p id="one">Thank you! visit again</p>
+        </div>     
+    </section>
+</body>
+</html>
